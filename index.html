@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-ao">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sisitema de facturamento - Kieidimus, LDA</title>
+
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+
+    <script defer src="js/html2pdf.bundle.min.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <img src="assets/logo.jpeg" width="150px" alt="Logo da Kieidimus, LDA">
+        <h1 id="titulo">Sisitema de Facturamento da Kieidimus, LDA</h1>
+    </header>
+    <form id="form">
+        <div style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+            <label for="introducao">
+                <h2>Digite a Introdução da factura:</h2>
+            </label>
+            <textarea name="introducao" id="introducao" cols="100" rows="8"></textarea>
+        </div>
+        <section>
+            <div>
+                <label for="nomeCliente">Nome da empresa ou cliente: </label>
+                <input type="text" name="nomeCliente" id="nomeCliente" placeholder="Nome da empresa ou cliente">
+            </div>
+            <div>
+                <label for="tipoServico">Tipo de serviço prestado:</label>
+                <input type="text" name="tipoServico" id="tipoServico" placeholder="Tipo de serviço">
+            </div>
+            <div>
+                <label for="data">Data:</label>
+                <input type="date" name="data" id="data" placeholder="Data">
+            </div>
+            <div>
+                <label for="numDeViagens">Valor Unitário:</label>
+                <input type="number" name="valorUnitario" id="valorUnitario" placeholder="Valor Unitário" min="0">
+            </div>
+            <div>
+                <label for="numeroDeServicosPrestados">Número de serviços prestados:</label>
+                <input type="number" name="numeroDeServicosPrestados" id="numeroDeServicosPrestados"
+                    placeholder="Número de serviços prestados" min="1">
+            </div>
+
+        </section>
+        <button>Imprimir a Factura</button>
+    </form>
+    <div id="content">
+        <h1>Teste</h1>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
