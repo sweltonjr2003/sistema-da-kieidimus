@@ -166,4 +166,7 @@ footer.print {
     header {
         flex-direction: column;
     }
+    header h1 {
+        font-size: 1em;
+    }
 }
